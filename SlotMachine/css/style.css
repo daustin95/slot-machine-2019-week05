@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box; 
+}    
+header, footer{
+   height: 80px;
+   border: 2px solid black;
+   clear: both;
+}
+ul li{
+   width: 12%;
+   height: 50px;
+   margin: 0 2%;
+   border: 2px solid black;
+   list-style: none;
+   text-align: center;
+   float: left;
+}
+.Top, section{
+   width: 100%;
+   height: 200px;
+   border: 2px solid black;
+   float: left;
+}
+#slot1, #slot2, #slot3{
+   width: 33.3333%;
+   height: 150px;
+   border: 2px solid green;
+   text-align: center;
+   font-size: 130px;
+   float: left;
+}
+#results{
+  font-size: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px){
+   section{
+       background: blue;
+   }
+}
+@media (min-width: 500px) and (max-width: 1200px){
+   .Mid section + section{
+       display: none;
+   }
+}
+@media (max-width: 500px){
+   header, section{
+       width: 100%;
+   }
+}
